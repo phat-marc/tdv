@@ -1,0 +1,101 @@
+/*Landing page*/
+	
+	#title {font-size:	2.5em;}
+
+	/*Open Times Table*/
+		.tblcl {margin: 2em 0;}
+
+		th.mbpd, td.mbpd {
+			padding: 9px;
+			padding-left: 25px;
+			margin: 0;
+		}
+
+		.mtbw {
+			max-width: 300px;
+			margin: 0 auto;
+		}
+
+	/*Dropdown*/
+		.mbpd {padding: 0 10px;}
+
+		.wdbt>p {
+			margin-bottom: 5px;
+		}
+
+		@media only screen and (min-width: 1000px) {
+			.spbl {padding-bottom: 6em;}
+		}
+
+		.wdbt {
+			width: 180px;
+		}
+
+		.dropdown-menu.wdbt {
+			background-color: rgba(120,120,120,.75);
+		}
+
+/*Portfolio page (Don't change id)*/
+	/*.myimf { max-height: 300px; }*/
+
+/*Map page*/
+	#map {
+		padding-bottom: 0;
+		padding-top: 4em;
+	}
+
+	.map {
+	  height: 30rem;
+	}
+
+	@media (max-width: 992px) {
+	  .map {
+	    height: 75%;
+	  }
+	}
+
+	.map>iframe {filter: brightness(.6);}
+	.map>iframe:hover {filter: brightness(.8);}
+
+/*Reviews carouusel*/
+	#review {padding: 4em 0; height: 1000px;}
+	#client-testimonial-carousel {min-height: 250px;}
+	div.carousel-item {padding: 0;}
+
+	ol.carousel-indicators {
+		margin: 0;
+		transform: translateY(100%);
+	}
+
+	footer.blockquote-footer {
+		margin: 10px;
+	}
+
+/*Awards page*/
+	#awards {padding-top: 4em;}
+
+/*Spacer*/
+	/*#spacer {padding: 4em 0;}*/
+
+/*Menu */
+	.mnurw {
+		justify-content: center;
+		margin: 2em auto;
+	}
+
+	.mnurw>.card {
+		justify-content: space-between;
+		border: none;
+	}
+
+	.rowp {margin: 1em;}
+
+	.colp {padding: 0 1em;}
+
+	.mnupc {
+		width: 240px;
+		height: 160px;
+		padding: 0;
+	}
+
+	h5 + p {max-width: 250px;}
