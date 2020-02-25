@@ -1,6 +1,6 @@
 /*Landing page*/
 	
-	#title {font-size:	2.5em;}
+	#title {font-size:	2.25em;}
 
 	/*Open Times Table*/
 		.tblcl {margin: 2em 0;}
@@ -57,9 +57,13 @@
 	.map>iframe {filter: brightness(.6);}
 	.map>iframe:hover {filter: brightness(.8);}
 
-/*Reviews carouusel*/
+/*Reviews carousel*/
 	#review {padding: 4em 0; height: 1000px;}
-	#client-testimonial-carousel {min-height: 250px;}
+	#client-testimonial-carousel {
+		/*min-height: 250px;*/
+		height: 450px;
+	}
+
 	div.carousel-item {padding: 0;}
 
 	ol.carousel-indicators {
@@ -99,3 +103,9 @@
 	}
 
 	h5 + p {max-width: 250px;}
+
+	.m-img {
+		display:flex;
+		object-fit: cover;
+		overflow: hidden;
+	}
