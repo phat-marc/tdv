@@ -1,40 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="format-detection" content="telephone=no">
 
-  <title>Da Vinci</title>
+  <title>Da Vinci Artisinal</title>
   <link rel="icon" href="https://img.icons8.com/color/48/000000/italy.png">
-
-  <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-
+  <link rel="stylesheet" href="css/style.css"></head>
 <body id="bookings">
-
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
 <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#bookings">Trattoria Da Vinci</a>
+      <a class="navbar-brand js-scroll-trigger" href="#bookings">Da Vinci Artisinal</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,7 +42,6 @@
       </div>
     </div>
   </nav>
-
 <!-- Landing -->
   <header class="masthead">
     <div class="container h-100">
@@ -64,13 +49,13 @@
         <div class="col-lg-10 align-self-end">
           <h1 id="title" class="text-uppercase text-white font-weight-bold">Homestyle Mediterranean Cuisine</h1>
         </div>
-        <div class="col-lg-8 tblcl">
+        <div class="col-lg-8">
           <hr class="divider my-4">
         	<table  id="booking" class="table text-left table-hover text-white-50 small mtbw">
         		<thead>
 				      <tr>
-				        <th class="mbpd">Days</th>
-				        <th class="mbpd">Times</th>
+				        <th class="mbpd"><strong>Days</strong></th>
+				        <th class="mbpd"><strong>Times</strong></th>
 				      </tr>
 				    </thead>
 				    <tbody>
@@ -86,17 +71,15 @@
 				        <td class="mbpd">Saturday</td>
 				        <td class="mbpd">12 - 5pm</td>
 				      </tr>
-				      <tr>
-				        <td class="mbpd">Public Holidays</td>
-				        <td class="mbpd">Closed</td>
-				      </tr>
 				    </tbody>
         	</table>
       	</div>
         <div class="col-lg-8 align-self-baseline">
         	<hr class="divider my-4">
           <p class="text-white-75 font-weight-light mb-4">Make sure to book in advance as we are always full.</p>
-          <div class="dropdown spbl">
+          <a id="telephone" href="tel:+27-044-343-1867"><strong>+27 (044) 343-1867</strong></a>
+
+          <!-- <div class="dropdown spbl">
 					  <button type="button" class="btn btn-primary dropdown-toggle wdbt" data-toggle="dropdown">
 					    Call us now
 					  </button>
@@ -104,19 +87,18 @@
 					    <p class="dropdown-item text-center text-black-80 mbpd" >+27 44 343 1867</p>
 					    <p class="dropdown-item text-center text-black-80 mbpd" >+27 74 103 8322</p>
 					  </div>
-					</div> 
+					</div>  -->
         </div>
       </div>
     </div>
   </header>
-
 <!-- 3 pictures -->
 	<section id="portfolio" class="bg-dark myprt">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-4">
           <a class="portfolio-box" href="img/lebk.jpg">
-            <img class="img-fluid myimf" src="img/lebk.jpg" alt="">
+            <img class="img-fluid" src="img/lebk.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Freshly baked
@@ -129,7 +111,7 @@
         </div>
         <div class="col-4">
           <a class="portfolio-box" href="img/blkb.jpg">
-            <img class="img-fluid myimf" src="img/blkb.jpg" alt="">
+            <img class="img-fluid" src="img/blkb.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Daily Specials
@@ -142,7 +124,7 @@
         </div>
         <div class="col-4">
           <a class="portfolio-box" href="img/kcrb.jpg">
-            <img class="img-fluid myimf" src="img/kcrb.jpg" alt="">
+            <img class="img-fluid" src="img/kcrb.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Kahlua Choc
@@ -156,7 +138,6 @@
       </div>
     </div>
   </section>
-
 <!-- Map section-->
   <section id="map" class="page-section bg-dark text-white">
     <div class="container-fluid mpbx text-center">
@@ -171,7 +152,6 @@
 	    </small>
 	  </section>
   </section>
-
 <!-- Review Section -->
   <section class="page-section bg-primary" id="review">
     <div class="container">
@@ -247,13 +227,18 @@
       </div>
     </div>
   </section>
-
 <!-- Awards Section -->
   <section class="page-section" id="awards">
     <div class="container">
-      <h2 class="text-center mt-0">About?</h2>
+      <h2 class="text-center mt-0">Posts from Facebook</h2>
       <hr class="divider my-4">
-      <p>Maybe a short descriptive paragraph about how amazing we are</p>
+
+      <div class="fb-post" data-href="https://www.facebook.com/TrattoriaSedge/photos/a.342897659061858/1968924693125805/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/TrattoriaSedge/posts/1968924693125805:0" class="fb-xfbml-parse-ignore"><p>In the heat of things. #filletsteak #trattoriasedge #chef #cordonbleu #eatout</p>Posted by <a href="https://www.facebook.com/TrattoriaSedge/">Trattoria da Vinci</a> on&nbsp;<a href="https://developers.facebook.com/TrattoriaSedge/posts/1968924693125805:0">Thursday, 19 July 2018</a></blockquote></div>
+
+      <div class="fb-post" data-href="https://www.facebook.com/TrattoriaSedge/photos/a.342897659061858/2241760782508860/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/TrattoriaSedge/posts/2241760782508860:0" class="fb-xfbml-parse-ignore"><p>This has to be one of our favourite reviews through the years 😊👌🏼🇮🇹 #trattoriasedge #oldbutgold</p>Posted by <a href="https://www.facebook.com/TrattoriaSedge/">Trattoria da Vinci</a> on&nbsp;<a href="https://developers.facebook.com/TrattoriaSedge/posts/2241760782508860:0">Monday, 28 January 2019</a></blockquote></div>
+
+      <div class="fb-post" data-href="https://www.facebook.com/TrattoriaSedge/photos/a.342897659061858/2542478592437076/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/TrattoriaSedge/posts/2542478592437076:0" class="fb-xfbml-parse-ignore"><p>The first focaccia is in the new oven. Can’t wait to see you all at our new premises. Exciting times ahead..... #focaccia #italiano #davincisedge</p>Posted by <a href="https://www.facebook.com/TrattoriaSedge/">Trattoria da Vinci</a> on&nbsp;<a href="https://developers.facebook.com/TrattoriaSedge/posts/2542478592437076:0">Friday, 2 August 2019</a></blockquote></div>
+
       <!-- <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
@@ -286,12 +271,10 @@
       </div> -->
     </div>
   </section>
-
 <!-- Spacer -->
   <!-- <section id="spacer" class="page-section bg-dark text-white">
     <div class="container text-center"></div>
   </section> -->
-
 <!-- Menu -->
   <section class="page-section bg-dark text-white" id="menu">
     <div class="container text-center">
@@ -299,7 +282,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">From the Menu</h2>
           <hr class="divider my-4">
-          <p class="text-muted mb-5">This is just a small selection of what you can expect to find on our menu.</p>
+          <!-- <p class="text-muted mb-5">This is just a small selection of what you can expect to find on our menu.</p> -->
         </div>
       </div>
 
@@ -396,25 +379,16 @@
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#booking">Book a Table</a>
     </div>
   </section>
-
 <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Website by: 2020 - <a href="https://webstorm.app">webstorm.app</a></div>
+      <div class="small text-center text-muted">Website by: <a href="https://webstorm.app">webstorm.app</a></div>
     </div>
   </footer>
-
-<!-- Bootstrap core JavaScript -->
+<!-- JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-
-</body>
-
-</html>
+</body></html>
