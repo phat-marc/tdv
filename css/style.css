@@ -5,7 +5,7 @@
 		th.mbpd, td.mbpd {
 			padding: 9px;
 			padding-left: 25px;
-			margin: 0;
+			margin: 0;   
 		}
 		.mtbw {max-width: 300px; margin: 0 auto;}
 
@@ -20,7 +20,8 @@
 		.dropdown-menu.wdbt {background-color: rgba(120,120,120,.75);}*/
 
 	/*Copy number*/
-		#telephone {font-size: 2rem;}
+		#telephone {font-size: 2rem; text-shadow: .5px .5px 3px rgba(0,0,0,.9);}
+
 
 /*Portfolio page (Don't change id)*/
 
@@ -42,8 +43,14 @@
 	footer.blockquote-footer {margin: 10px;}
 
 /*Awards page*/
-	/*#awards {padding-top: 4em;}*/
-
+	#awards {padding-top: 4em;}
+	p.text-muted.mnurw {font-size: 12px;}
+	.post {
+		display: inline-flex;
+		margin: 1em auto;
+		max-width: 350px;
+	}
+	
 /*Spacer*/
 	/*#spacer {padding: 4em 0;}*/
 
