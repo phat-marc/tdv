@@ -22,11 +22,10 @@
 	/*Copy number*/
 		#telephone {font-size: 2rem; text-shadow: .5px .5px 3px rgba(0,0,0,.9);}
 
-
 /*Portfolio page (Don't change id)*/
 
 /*Map page*/
-	#map {padding-bottom: 0; padding-top: 4em;}
+	#map {padding: 4em 0;}
 	.map {height: 30rem;}
 	@media (max-width: 992px) {
 	  .map { height: 75%;}
@@ -34,6 +33,59 @@
 
 	.map>iframe {filter: brightness(.6);}
 	.map>iframe:hover {filter: brightness(.8);}
+
+/*take aways*/
+	.overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+  }
+
+  section.cta {
+    position: relative;
+    padding: 250px 0;
+    background-image: url("../img/las.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  section.cta .cta-content {position: relative; z-index: 1;}
+
+  section.cta .cta-content h2 {
+    font-size: 50px;
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white;
+  }
+	/*section#take-aways {
+		margin: 0; padding: 0;
+		background-color: 
+	}*/
+
+	/*.piccont {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 75vh;
+	}
+
+	.piccont::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-position: center;
+    background-image: url("../img/las.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(25%) opacity(75%);
+  }*/
 
 /*Reviews carousel*/
 	#review {padding: 4em 0; height: 800px;}
